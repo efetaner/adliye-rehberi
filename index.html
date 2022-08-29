@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h1>Adliye Rehberi</h1>
+      <select id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
+        <option value="">Seçiniz</option>
+        <option value="agir-ceza">Ağır Ceza Mahkemeleri</option> <!--TMM-->
+        <option value="asliye-ceza">Asliye Ceza Mahkemeleri</option> <!--TMM-->
+        <option value="sulh-ceza">Sulh Ceza Hakimlikleri</option> <!--TMM-->
+        <option value="asliye-hukuk">Asliye Hukuk Mahkemeleri</option> <!--TMM-->
+        <option value="sulh-hukuk">Sulh Hukuk Mahkemeleri</option> <!--TMM-->
+        <option value="is">İş Mahkemeleri</option><!--TMM-->
+        <option value="icra">İcra Mahkemeleri-İcra Müdürlükleri</option>
+        <option value="aile">Aile Mahkemeleri</option><!--TMM-->
+        <option value="cocuk">Çocuk Mahkemeleri</option> <!--TMM-->
+        <option value="cocuk-agir-ceza">Çocuk Ağır Ceza Mahkemeleri</option> <!--TMM-->
+        <option value="ticaret">Asliye Ticaret Mahkemeleri</option><!--TMM-->
+        <option value="tuketici">Tüketici Mahkemeleri</option> <!--TMM-->
+        <option value="fikri-ve-sinai">Fikri ve Sınai Haklar Mahkemeleri</option><!--TMM-->
+      </select>
+      <select id="slct2" name="slct2" onchange="func1(this.value)">
+      </select>
+               <!-- 1. Ağır Ceza --> 
+      <div class="divz"><p>Üst Zemin C Blok</p></div>     
+      <div class="divz"><p>E Blok 5. Kat</p></div>
+      <div class="divz"><p>Üst Zemin C Blok</p></div>
+      <div class="divz"><p>E Blok 5. Kat</p></div>
+      <div class="divz"><p>Üst Zemin C Blok</p></div>
+      <div class="divz"><p>Üst Zemin C Blok</p></div>
+      <div class="divz"><p>Üst Zemin C Blok</p></div>
+      <div class="divz"><p>1. Kat C Blok</p></div>
+      <div class="divz"><p>1. Kat C Blok</p></div>
+             <!-- 10. Ağır Ceza --> 
+      <div class="divz"><p>1. Kat C Blok</p></div>        
+      <div class="divz"><p>1. Kat C Blok</p></div> 
+      <div class="divz"><p>1. Kat C Blok</p></div> 
+      <div class="divz"><p>E Blok 5. Kat</p></div> 
+      <div class="divz"><p>E Blok 4. Kat</p></div> 
+      <div class="divz"><p>E Blok 4. Kat</p></div>
+      <div class="divz"><p>E Blok 4. Kat</p></div>
+      <div class="divz"><p>E Blok 3. Kat</p></div>
+      <div class="divz"><p>E Blok 3. Kat</p></div>
+      <div class="divz"><p>E Blok 3. Kat</p></div>
+              <!-- 20. Ağır Ceza --> 
+      <div class="divz"><p>E Blok 2. Kat</p></div>
+      <div class="divz"><p>E Blok 2. Kat</p></div> 
+      <div class="divz"><p>E Blok 2. Kat</p></div> 
+      <div class="divz"><p>E Blok 2. Kat</p></div> 
+      <div class="divz"><p>E Blok 1. Kat</p></div> 
+      <div class="divz"><p>E Blok 1. Kat</p></div>
+      <div class="divz"><p>E Blok 1. Kat</p></div>
+      <div class="divz"><p>E Blok 1. Kat</p></div>
+      <div class="divz"><p>C Blok 3. Kat</p></div>
+      <div class="divz"><p>A Blok 4. Kat</p></div>
+             <!-- 30. Ağır Ceza --> 
+      <div class="divz"><p>A Blok 4. Kat</p></div>
+      <div class="divz"><p>A Blok 4. Kat</p></div> 
+      <div class="divz"><p>A Blok 4. Kat</p></div> 
+      <div class="divz"><p>A Blok 4. Kat</p></div> 
+      <div class="divz"><p>A Blok 5. Kat</p></div> 
+      <div class="divz"><p>A Blok 2. Kat</p></div>
+      <div class="divz"><p>A Blok 5. Kat</p></div>
+      <div class="divz"><p>A Blok 5. Kat</p></div>
+      <div class="divz"><p>38 air</p></div>
+      <div class="divz"><p>39 air</p></div>
+              <!-- 40. Ağır Ceza --> 
+      <div class="divz"><p>40 air</p></div>
+      <div class="divz"><p>41 air</p></div> 
+      <div class="divz"><p>42 air</p></div> 
+      <div class="divz"><p>43 air</p></div> 
+      <div class="divz"><p>44 air</p></div> 
+      <div class="divz"><p>45 air</p></div>
+      <div class="divz"><p>46 air</p></div>
+      <div class="divz"><p>47 air</p></div>
+      <div class="divz"><p>48 air</p></div>
+      <div class="divz"><p>49 air</p></div>
+              <!-- 50. Ağır Ceza --> 
+      <div class="divz"><p>50 air</p></div>
+      <div class="divz"><p>51 air</p></div> 
+      <div class="divz"><p>52 air</p></div> 
+      <div class="divz"><p>53 air</p></div> 
+      <div class="divz"><p>54 air</p></div> 
+      <div class="divz"><p>55 air</p></div>
+      <div class="divz"><p>56 air</p></div>
+      <div class="divz"><p>57 air</p></div>
+      <div class="divz"><p>58 air</p></div>
+      <div class="divz"><p>59 air</p></div>
+      <div class="divz"><p>60 air</p></div>
+              <!-- 1. Sulh Ceza --> 
+      <div class="divz"><p>D Blok 2. Kat</p></div>
+      <div class="divz"><p>D Blok 2. Kat</p></div> 
+      <div class="divz"><p>D Blok 2. Kat</p></div> 
+      <div class="divz"><p>D Blok 2. Kat</p></div> 
+      <div class="divz"><p>D Blok 2. Kat</p></div> 
+      <div class="divz"><p>D Blok 2. Kat</p></div>
+      <div class="divz"><p>D Blok 2. Kat</p></div>
+      <div class="divz"><p>D Blok 2. Kat</p></div>
+      <div class="divz"><p>9 air</p></div>
+              <!-- 10. Sulh Ceza --> 
+      <div class="divz"><p>10 air</p></div>
+      <div class="divz"><p>11 air</p></div>
+      <div class="divz"><p>12 air</p></div> 
+      <div class="divz"><p>13 air</p></div> 
+      <div class="divz"><p>14 air</p></div> 
+      <div class="divz"><p>15 air</p></div> 
+      <div class="divz"><p>16 air</p></div>
+      <div class="divz"><p>17 air</p></div>
+      <div class="divz"><p>18 air</p></div>
+      <div class="divz"><p>19 air</p></div>
+      <div class="divz"><p>20 air</p></div>
+              <!-- 1. Çocuk -->
+      <div class="divz"><p>1. Çocuk Mahkemesi</p></div>
+      <div class="divz"><p>2. Çocuk Mahkemesi</p></div> 
+      <div class="divz"><p>3. Çocuk Mahkemesi</p></div> 
+      <div class="divz"><p>4. Çocuk Mahkemesi</p></div> 
+      <div class="divz"><p>5. Çocuk Mahkemesi</p></div> 
+      <div class="divz"><p>6 air</p></div>
+      <div class="divz"><p>7 air</p></div>
+      <div class="divz"><p>8 air</p></div>
+      <div class="divz"><p>9 air</p></div>
+      <div class="divz"><p>10. Çocuk Mahkemesi</p></div> 
+              <!-- 1. Çocuk Ağır Ceza -->
+      <div class="divz"><p>1. Çocuk Ağır Ceza Mahkemesi</p></div>
+      <div class="divz"><p>2. Çocuk Mahkemesi</p></div> 
+      <div class="divz"><p>3. Çocuk Mahkemesi</p></div> 
+      <div class="divz"><p>4. Çocuk Mahkemesi</p></div> 
+      <div class="divz"><p>5. Çocuk Mahkemesi</p></div> 
+      <div class="divz"><p>6 air</p></div>
+      <div class="divz"><p>7 air</p></div>
+      <div class="divz"><p>8 air</p></div>
+      <div class="divz"><p>9 air</p></div>
+      <div class="divz"><p>10. Çocuk Mahkemesi</p></div> 
+              <!--1. Asliye Ceza-->
+      <div class="divz"><p>1 air</p></div>
+      <div class="divz"><p>2 air</p></div> 
+      <div class="divz"><p>3 air</p></div> 
+      <div class="divz"><p>4 air</p></div> 
+      <div class="divz"><p>5 air</p></div> 
+      <div class="divz"><p>6 air</p></div>
+      <div class="divz"><p>7 air</p></div>
+      <div class="divz"><p>8 air</p></div>
+      <div class="divz"><p>9 air</p></div>
+              <!-- 10. Asliye Ceza --> 
+      <div class="divz"><p>10 air</p></div>
+      <div class="divz"><p>11 air</p></div>
+      <div class="divz"><p>12 air</p></div> 
+      <div class="divz"><p>13 air</p></div> 
+      <div class="divz"><p>14 air</p></div> 
+      <div class="divz"><p>15 air</p></div> 
+      <div class="divz"><p>16 air</p></div>
+      <div class="divz"><p>17 air</p></div>
+      <div class="divz"><p>18 air</p></div>
+      <div class="divz"><p>19 air</p></div>
+              <!-- 20. Asliye Ceza --> 
+      <div class="divz"><p>20 air</p></div>
+      <div class="divz"><p>21 air</p></div>
+      <div class="divz"><p>22 air</p></div> 
+      <div class="divz"><p>23 air</p></div> 
+      <div class="divz"><p>24 air</p></div> 
+      <div class="divz"><p>25 air</p></div> 
+      <div class="divz"><p>26 air</p></div>
+      <div class="divz"><p>27 air</p></div>
+      <div class="divz"><p>28 air</p></div>
+      <div class="divz"><p>29 air</p></div>
+              <!-- 30. Asliye Ceza --> 
+      <div class="divz"><p>30 air</p></div>
+      <div class="divz"><p>31 air</p></div>
+      <div class="divz"><p>32 air</p></div> 
+      <div class="divz"><p>33 air</p></div> 
+      <div class="divz"><p>34 air</p></div> 
+      <div class="divz"><p>35 air</p></div> 
+      <div class="divz"><p>36 air</p></div>
+      <div class="divz"><p>37 air</p></div>
+      <div class="divz"><p>38 air</p></div>
+      <div class="divz"><p>39 air</p></div>
+                    <!-- 40. Asliye Ceza --> 
+      <div class="divz"><p>40 air</p></div>
+      <div class="divz"><p>41 air</p></div>
+      <div class="divz"><p>42 air</p></div> 
+      <div class="divz"><p>43 air</p></div> 
+      <div class="divz"><p>44 air</p></div> 
+      <div class="divz"><p>45 air</p></div> 
+      <div class="divz"><p>46 air</p></div>
+      <div class="divz"><p>47 air</p></div>
+      <div class="divz"><p>48 air</p></div>
+      <div class="divz"><p>49 air</p></div>
+                    <!-- 50. Asliye Ceza --> 
+      <div class="divz"><p>50 air</p></div>
+      <div class="divz"><p>51 air</p></div>
+      <div class="divz"><p>52 air</p></div> 
+      <div class="divz"><p>53 air</p></div> 
+      <div class="divz"><p>54 air</p></div> 
+      <div class="divz"><p>55 air</p></div> 
+      <div class="divz"><p>56 air</p></div>
+      <div class="divz"><p>57 air</p></div>
+      <div class="divz"><p>58 air</p></div>
+      <div class="divz"><p>59 air</p></div>
+                    <!-- 60. Asliye Ceza --> 
+      <div class="divz"><p>60 air</p></div>
+      <div class="divz"><p>61 air</p></div>
+      <div class="divz"><p>62 air</p></div> 
+      <div class="divz"><p>63 air</p></div> 
+      <div class="divz"><p>64 air</p></div> 
+      <div class="divz"><p>65 air</p></div> 
+      <div class="divz"><p>66 air</p></div>
+      <div class="divz"><p>67 air</p></div>
+      <div class="divz"><p>68 air</p></div>
+      <div class="divz"><p>69 air</p></div>
+                    <!-- 70. Asliye Ceza --> 
+      <div class="divz"><p>70 air</p></div>
+      <div class="divz"><p>71 air</p></div>
+      <div class="divz"><p>72 air</p></div> 
+      <div class="divz"><p>73 air</p></div> 
+      <div class="divz"><p>74 air</p></div> 
+      <div class="divz"><p>75 air</p></div> 
+      <div class="divz"><p>76 air</p></div>
+      <div class="divz"><p>77 air</p></div>
+      <div class="divz"><p>78 air</p></div>
+      <div class="divz"><p>79 air</p></div>
+                    <!-- 80. Asliye Ceza --> 
+      <div class="divz"><p>80 air</p></div>
+      <div class="divz"><p>81 air</p></div>
+      <div class="divz"><p>82 air</p></div> 
+      <div class="divz"><p>83 air</p></div> 
+      <div class="divz"><p>84 air</p></div> 
+      <div class="divz"><p>85 air</p></div> 
+      <div class="divz"><p>86 air</p></div>
+      <div class="divz"><p>87 air</p></div>
+      <div class="divz"><p>88 air</p></div>
+      <div class="divz"><p>89 air</p></div>
+                    <!-- 90. Asliye Ceza --> 
+      <div class="divz"><p>90 air</p></div>
+      <div class="divz"><p>91 air</p></div>
+      <div class="divz"><p>92 air</p></div> 
+      <div class="divz"><p>93 air</p></div> 
+      <div class="divz"><p>94 air</p></div> 
+      <div class="divz"><p>95 air</p></div> 
+      <div class="divz"><p>96 air</p></div>
+      <div class="divz"><p>97 air</p></div>
+      <div class="divz"><p>98 air</p></div>
+      <div class="divz"><p>99 air</p></div>
+      <div class="divz"><p>100 air</p></div>
+
+                    <!-- 1. Asliye Hukuk --> 
+      <div class="divz"><p>1 air</p></div>
+      <div class="divz"><p>2 air</p></div> 
+      <div class="divz"><p>3 air</p></div> 
+      <div class="divz"><p>4 air</p></div> 
+      <div class="divz"><p>5 air</p></div> 
+      <div class="divz"><p>6 air</p></div>
+      <div class="divz"><p>7 air</p></div>
+      <div class="divz"><p>8 air</p></div>
+      <div class="divz"><p>9 air</p></div>
+                    <!-- 10. Asliye Hukuk --> 
+      <div class="divz"><p>10 air</p></div>
+      <div class="divz"><p>11 air</p></div>
+      <div class="divz"><p>12 air</p></div> 
+      <div class="divz"><p>13 air</p></div> 
+      <div class="divz"><p>14 air</p></div> 
+      <div class="divz"><p>15 air</p></div> 
+      <div class="divz"><p>16 air</p></div>
+      <div class="divz"><p>17 air</p></div>
+      <div class="divz"><p>18 air</p></div>
+      <div class="divz"><p>19 air</p></div>
+             <!-- 20. Asliye Hukuk --> 
+      <div class="divz"><p>20 air</p></div>
+      <div class="divz"><p>21 air</p></div>
+      <div class="divz"><p>22 air</p></div> 
+      <div class="divz"><p>23 air</p></div> 
+      <div class="divz"><p>24 air</p></div> 
+      <div class="divz"><p>25 air</p></div> 
+      <div class="divz"><p>26 air</p></div>
+      <div class="divz"><p>27 air</p></div>
+      <div class="divz"><p>28 air</p></div>
+      <div class="divz"><p>29 air</p></div>
+             <!-- 30. Asliye Hukuk --> 
+      <div class="divz"><p>30 air</p></div>
+      <div class="divz"><p>31 air</p></div>
+      <div class="divz"><p>32 air</p></div> 
+      <div class="divz"><p>33 air</p></div> 
+      <div class="divz"><p>34 air</p></div> 
+      <div class="divz"><p>35 air</p></div> 
+      <div class="divz"><p>36 air</p></div>
+      <div class="divz"><p>37 air</p></div>
+      <div class="divz"><p>38 air</p></div>
+      <div class="divz"><p>39 air</p></div>
+              <!-- 40. Asliye Hukuk --> 
+      <div class="divz"><p>40 air</p></div>
+      <div class="divz"><p>41 air</p></div>
+      <div class="divz"><p>42 air</p></div> 
+      <div class="divz"><p>43 air</p></div> 
+      <div class="divz"><p>44 air</p></div> 
+      <div class="divz"><p>45 air</p></div> 
+      <div class="divz"><p>46 air</p></div>
+      <div class="divz"><p>47 air</p></div>
+      <div class="divz"><p>48 air</p></div>
+      <div class="divz"><p>49 air</p></div>
+      <div class="divz"><p>50 air</p></div>
+              <!-- 1. Sulh Hukuk --> 
+      <div class="divz"><p>1 air</p></div>
+      <div class="divz"><p>2 air</p></div> 
+      <div class="divz"><p>3 air</p></div> 
+      <div class="divz"><p>4 air</p></div> 
+      <div class="divz"><p>5 air</p></div> 
+      <div class="divz"><p>6 air</p></div>
+      <div class="divz"><p>7 air</p></div>
+      <div class="divz"><p>8 air</p></div>
+      <div class="divz"><p>9 air</p></div>
+              <!-- 10. Sulh Hukuk --> 
+      <div class="divz"><p>10 air</p></div>
+      <div class="divz"><p>11 air</p></div>
+      <div class="divz"><p>12 air</p></div> 
+      <div class="divz"><p>13 air</p></div> 
+      <div class="divz"><p>14 air</p></div> 
+      <div class="divz"><p>15 air</p></div> 
+      <div class="divz"><p>16 air</p></div>
+      <div class="divz"><p>17 air</p></div>
+      <div class="divz"><p>18 air</p></div>
+      <div class="divz"><p>19 air</p></div>
+            <!-- 20. Sulh Hukuk --> 
+      <div class="divz"><p>20 air</p></div>
+      <div class="divz"><p>21 air</p></div>
+      <div class="divz"><p>22 air</p></div> 
+      <div class="divz"><p>23 air</p></div> 
+      <div class="divz"><p>24 air</p></div> 
+      <div class="divz"><p>25 air</p></div> 
+      <div class="divz"><p>26 air</p></div>
+      <div class="divz"><p>27 air</p></div>
+      <div class="divz"><p>28 air</p></div>
+      <div class="divz"><p>29 air</p></div>
+      <div class="divz"><p>30 air</p></div>
+            <!--1. Fikri ve Sinai Haklar-->
+      <div class="divz"><p>1 air</p></div>
+      <div class="divz"><p>2 air</p></div> 
+      <div class="divz"><p>3 air</p></div> 
+      <div class="divz"><p>4 air</p></div> 
+      <div class="divz"><p>5 air</p></div> 
+      <div class="divz"><p>6 air</p></div>
+      <div class="divz"><p>7 air</p></div>
+      <div class="divz"><p>8 air</p></div>
+      <div class="divz"><p>9 air</p></div>
+                    <!--various-->
+      <div class="divz"><p>1 air</p></div>
+      <div class="divz"><p>2 air</p></div> 
+      <div class="divz"><p>3 air</p></div> 
+      <div class="divz"><p>4 air</p></div> 
+      <div class="divz"><p>5 air</p></div> 
+      <div class="divz"><p>6 air</p></div>
+      <div class="divz"><p>7 air</p></div>
+      <div class="divz"><p>8 air</p></div>
+      <div class="divz"><p>9 air</p></div>
+      <div class="divz"><p>9 air</p></div>
+      <div class="divz"><p>10 air</p></div>
+              <!--1. iş mahkemesi-->
+      <div class="divz"><p>1 air</p></div>
+      <div class="divz"><p>2 air</p></div> 
+      <div class="divz"><p>3 air</p></div> 
+      <div class="divz"><p>4 air</p></div> 
+      <div class="divz"><p>5 air</p></div> 
+      <div class="divz"><p>6 air</p></div>
+      <div class="divz"><p>7 air</p></div>
+      <div class="divz"><p>8 air</p></div>
+      <div class="divz"><p>9 air</p></div>
+              <!-- 10. iş mahkemesi --> 
+      <div class="divz"><p>10 air</p></div>
+      <div class="divz"><p>11 air</p></div>
+      <div class="divz"><p>12 air</p></div> 
+      <div class="divz"><p>13 air</p></div> 
+      <div class="divz"><p>14 air</p></div> 
+      <div class="divz"><p>15 air</p></div> 
+      <div class="divz"><p>16 air</p></div>
+      <div class="divz"><p>17 air</p></div>
+      <div class="divz"><p>18 air</p></div>
+      <div class="divz"><p>19 air</p></div>
+              <!-- 20. iş mahkemesi --> 
+      <div class="divz"><p>20 air</p></div>
+      <div class="divz"><p>21 air</p></div>
+      <div class="divz"><p>22 air</p></div> 
+      <div class="divz"><p>23 air</p></div> 
+      <div class="divz"><p>24 air</p></div> 
+      <div class="divz"><p>25 air</p></div> 
+      <div class="divz"><p>26 air</p></div>
+      <div class="divz"><p>27 air</p></div>
+      <div class="divz"><p>28 air</p></div>
+      <div class="divz"><p>29 air</p></div>
+              <!-- 30. iş mahkemesi --> 
+      <div class="divz"><p>30 air</p></div>
+      <div class="divz"><p>31 air</p></div>
+      <div class="divz"><p>32 air</p></div> 
+      <div class="divz"><p>33 air</p></div> 
+      <div class="divz"><p>34 air</p></div> 
+      <div class="divz"><p>35 air</p></div> 
+      <div class="divz"><p>36 air</p></div>
+      <div class="divz"><p>37 air</p></div>
+      <div class="divz"><p>38 air</p></div>
+      <div class="divz"><p>39 air</p></div>
+              <!-- 40. iş mahkemesi --> 
+      <div class="divz"><p>40 air</p></div>
+      <div class="divz"><p>41 air</p></div>
+      <div class="divz"><p>42 air</p></div> 
+      <div class="divz"><p>43 air</p></div> 
+      <div class="divz"><p>44 air</p></div> 
+      <div class="divz"><p>45 air</p></div> 
+      <div class="divz"><p>46 air</p></div>
+      <div class="divz"><p>47 air</p></div>
+      <div class="divz"><p>48 air</p></div>
+      <div class="divz"><p>49 air</p></div>
+              <!-- 50. iş mahkemesi --> 
+      <div class="divz"><p>50 air</p></div>
+      <div class="divz"><p>51 air</p></div>
+      <div class="divz"><p>52 air</p></div> 
+      <div class="divz"><p>53 air</p></div> 
+      <div class="divz"><p>54 air</p></div> 
+      <div class="divz"><p>55 air</p></div> 
+      <div class="divz"><p>56 air</p></div>
+      <div class="divz"><p>57 air</p></div>
+      <div class="divz"><p>58 air</p></div>
+      <div class="divz"><p>59 air</p></div>
+             <!-- 60. iş mahkemesi --> 
+      <div class="divz"><p>60 air</p></div>
+      <div class="divz"><p>61 air</p></div>
+      <div class="divz"><p>62 air</p></div> 
+      <div class="divz"><p>63 air</p></div> 
+      <div class="divz"><p>64 air</p></div> 
+      <div class="divz"><p>65 air</p></div> 
+      <div class="divz"><p>66 air</p></div>
+      <div class="divz"><p>67 air</p></div>
+      <div class="divz"><p>68 air</p></div>
+      <div class="divz"><p>69 air</p></div>
+              <!-- 70. iş mahkemesi --> 
+      <div class="divz"><p>70 air</p></div>
+      <div class="divz"><p>71 air</p></div>
+      <div class="divz"><p>72 air</p></div> 
+      <div class="divz"><p>73 air</p></div> 
+      <div class="divz"><p>74 air</p></div> 
+      <div class="divz"><p>75 air</p></div> 
+      <div class="divz"><p>76 air</p></div>
+      <div class="divz"><p>77 air</p></div>
+      <div class="divz"><p>78 air</p></div>
+      <div class="divz"><p>79 air</p></div>
+      <div class="divz"><p>80 air</p></div>
+                <!--1. Tüketici-->
+      <div class="divz"><p>1 air</p></div>
+      <div class="divz"><p>2 air</p></div> 
+      <div class="divz"><p>3 air</p></div> 
+      <div class="divz"><p>4 air</p></div> 
+      <div class="divz"><p>5 air</p></div> 
+      <div class="divz"><p>6 air</p></div>
+      <div class="divz"><p>7 air</p></div>
+      <div class="divz"><p>8 air</p></div>
+      <div class="divz"><p>9 air</p></div>
+              <!-- 10. Tüketici --> 
+      <div class="divz"><p>10 air</p></div>
+      <div class="divz"><p>11 air</p></div>
+      <div class="divz"><p>12 air</p></div> 
+      <div class="divz"><p>13 air</p></div> 
+      <div class="divz"><p>14 air</p></div> 
+      <div class="divz"><p>15 air</p></div> 
+      <div class="divz"><p>16 air</p></div>
+      <div class="divz"><p>17 air</p></div>
+      <div class="divz"><p>18 air</p></div>
+      <div class="divz"><p>19 air</p></div>
+      <div class="divz"><p>20 air</p></div>
+              <!--1. Aile-->
+      <div class="divz"><p>1 air</p></div>
+      <div class="divz"><p>2 air</p></div> 
+      <div class="divz"><p>3 air</p></div> 
+      <div class="divz"><p>4 air</p></div> 
+      <div class="divz"><p>5 air</p></div> 
+      <div class="divz"><p>6 air</p></div>
+      <div class="divz"><p>7 air</p></div>
+      <div class="divz"><p>8 air</p></div>
+      <div class="divz"><p>9 air</p></div>
+              <!-- 10. Aile --> 
+      <div class="divz"><p>10 air</p></div>
+      <div class="divz"><p>11 air</p></div>
+      <div class="divz"><p>12 air</p></div> 
+      <div class="divz"><p>13 air</p></div> 
+      <div class="divz"><p>14 air</p></div> 
+      <div class="divz"><p>15 air</p></div> 
+      <div class="divz"><p>16 air</p></div>
+      <div class="divz"><p>17 air</p></div>
+      <div class="divz"><p>18 air</p></div>
+      <div class="divz"><p>19 air</p></div>
+              <!-- 20. Aile --> 
+      <div class="divz"><p>20 air</p></div>
+      <div class="divz"><p>21 air</p></div>
+      <div class="divz"><p>22 air</p></div> 
+      <div class="divz"><p>23 air</p></div> 
+      <div class="divz"><p>24 air</p></div> 
+      <div class="divz"><p>25 air</p></div> 
+      <div class="divz"><p>26 air</p></div>
+      <div class="divz"><p>27 air</p></div>
+      <div class="divz"><p>28 air</p></div>
+      <div class="divz"><p>29 air</p></div>
+              <!-- 30. Aile --> 
+      <div class="divz"><p>30 air</p></div>
+      <div class="divz"><p>31 air</p></div>
+      <div class="divz"><p>32 air</p></div> 
+      <div class="divz"><p>33 air</p></div> 
+      <div class="divz"><p>34 air</p></div> 
+      <div class="divz"><p>35 air</p></div> 
+      <div class="divz"><p>36 air</p></div>
+      <div class="divz"><p>37 air</p></div>
+      <div class="divz"><p>38 air</p></div>
+      <div class="divz"><p>39 air</p></div>
+              <!-- 40. Aile --> 
+      <div class="divz"><p>40 air</p></div>
+      <div class="divz"><p>41 air</p></div>
+      <div class="divz"><p>42 air</p></div> 
+      <div class="divz"><p>43 air</p></div> 
+      <div class="divz"><p>44 air</p></div> 
+      <div class="divz"><p>45 air</p></div> 
+      <div class="divz"><p>46 air</p></div>
+      <div class="divz"><p>47 air</p></div>
+      <div class="divz"><p>48 air</p></div>
+      <div class="divz"><p>49 air</p></div>
+      <div class="divz"><p>50 air</p></div>
+          <!--1. ticaret mahkemesi-->
+      <div class="divz"><p>1 air</p></div>
+      <div class="divz"><p>2 air</p></div> 
+      <div class="divz"><p>3 air</p></div> 
+      <div class="divz"><p>4 air</p></div> 
+      <div class="divz"><p>5 air</p></div> 
+      <div class="divz"><p>6 air</p></div>
+      <div class="divz"><p>7 air</p></div>
+      <div class="divz"><p>8 air</p></div>
+      <div class="divz"><p>9 air</p></div>
+          <!-- 10. ticaret mahkemesi --> 
+      <div class="divz"><p>10 air</p></div>
+      <div class="divz"><p>11 air</p></div>
+      <div class="divz"><p>12 air</p></div> 
+      <div class="divz"><p>13 air</p></div> 
+      <div class="divz"><p>14 air</p></div> 
+      <div class="divz"><p>15 air</p></div> 
+      <div class="divz"><p>16 air</p></div>
+      <div class="divz"><p>17 air</p></div>
+      <div class="divz"><p>18 air</p></div>
+      <div class="divz"><p>19 air</p></div>
+      <div class="divz"><p>20 air</p></div>
+
+
+
+
+      <div id="result"></div>
+            
+      <!-- 
+      
+
+
+      <select id="slct1" name="slct1" onchange="populate(this.id, 'slct2')">
+        <option value="">Seçiniz</option>
+        <option value="agir-ceza">Ağır Ceza Mahkemeleri</option>
+        <option value="asliye-ceza">Asliye Ceza Mahkemeleri</option>
+        <option value="sulh-ceza">Sulh Ceza Hakimlikleri</option>
+        <option value="asliye-hukuk">Asliye Hukuk Mahkemeleri</option>
+        <option value="sulh-hukuk">Sulh Hukuk Mahkemeleri</option>
+        <option value="is">İş Mahkemeleri</option>
+        <option value="icra">İcra Mahkemeleri-İcra Müdürlükleri</option>
+        <option value="aile">Aile Mahkemeleri</option>
+        <option value="cocuk">Çocuk Mahkemeleri</option>
+        <option value="cocuk-agir-ceza">Çocuk Ağır Ceza Mahkemeleri</option>
+        <option value="ticaret">Asliye Ticaret Mahkemeleri</option>
+        <option value="tuketici">Tüketici Mahkemeleri</option>
+        <option value="fikri-ve-sinai">Fikri ve Sınai Haklar Mahkemeleri</option>
+      </select>
+
+      <select id="slct2" name="slct2">
+
+      </select>
+
+
+Faz 1--> 
+    <script src="index.js"></script>
+
+  </body>
+
+</html>
