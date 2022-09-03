@@ -26,17 +26,19 @@ select {
   font-size: 14px;
 }
 #result {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-top: 15px;
   width: 250px;
   color: #4ADF86;
   background-color: #273549;
-  text-align: center;
   border-radius: 8px;
   font-family: 'Inter', sans-serif;
   cursor: pointer;
   transition: 0.3s;
+  display: block;
+  text-align: center;
+
 }
 #result:hover {
   background-color: #344458;
@@ -44,3 +46,21 @@ select {
 div:not(#result):not(#styling-div) {
   display:none;
 }
+
+a {
+  text-decoration: none;
+  color: #4ADF86;
+  transition: 1s;
+  font-size: 60px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #4adf868b;
+  font-size: 90px;
+}
+
+p {
+  line-height:28px;
+}
+
